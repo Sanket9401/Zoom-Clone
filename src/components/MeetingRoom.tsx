@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import {
+  CallControls,
   CallParticipantsList,
   PaginatedGridLayout,
   SpeakerLayout,
@@ -35,6 +36,9 @@ const MeetingRoom = () => {
         >
           <CallParticipantsList onClose={() => setShowParticipants(false)} />
         </div>
+      </div>
+      <div className="fixed bottom-0 flex w-full items-center justify-center gap-5">
+        <CallControls />
       </div>
     </section>
   );
